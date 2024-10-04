@@ -12,11 +12,70 @@
     <form action="/action_page.php"></form>
     <fieldset>
       <legend>회원가입</legend>
-
-      <label for="id">아이디</label><input type="text" id="id" name="id" />
+      <label for="name">이름</label>
+      <input type="text" name="name" id="name" value="홍길동" readonly />
       <hr />
+
+      <!-- <label for="id">아이디</label> -->
+      <label for="id">아이디</label>
+      <input type="text" id="id" name="id" placeholder="8자리 이상 특수문자 포함" />
+      <hr />
+
       <label for="password">비밀번호</label>
       <input type="password" id="pw" name="pw" />
+      <hr />
+
+      <label for="email">이메일</label>
+      <input type="email" name="email" id="email" />
+      <hr />
+
+      <label for="tel">전화번호</label>
+      <input type="tel" name="tel" id="tel" value="010.1234.5678" readonly />
+      <hr />
+
+      <label for="file">첨부파일</label>
+      <input type="file" name="file" id="file" />
+      <hr />
+
+      <label for="search">검색</label>
+      <input type="search" name="search" id="search" />
+      <hr />
+
+      <label for="animals">좋아하는 동물</label>
+      <select name="animals" id="animals" multiple>
+        <option value="cat" selected>고양이</option>
+        <option value="dog">강아지</option>
+        <option value="hamster">햄스터</option>
+        <option value="fish">물고기</option>
+      </select>
+      <hr />
+
+      <label for="text">가입 목적</label>
+      <textarea name="text" id="text" rows="10"></textarea>
+      <hr />
+
+      <button>button</button>
+      <input type="button" value="button" />
+      <hr />
+
+      <input type="radio" name="gender" id="m" />
+      <label for="m">남자</label>
+      <input type="radio" name="gender" id="f" />
+      <label for="f">여자</label>
+      <hr />
+
+      <input type="checkbox" name="cat" id="cat" />
+      <label for="cat">cat</label>
+      <input type="checkbox" name="dog" id="dog" />
+      <label for="dog">dog</label>
+      <input type="checkbox" name="hamster" id="hamster" />
+      <label for="hamster">hamster</label>
+      <input type="checkbox" name="fish" id="fish" />
+      <label for="fish">fish</label>
+      <hr />
+
+      <input type="reset" value="취소" />
+      <input type="submit" value="회원가입" />
     </fieldset>
   </body>
 </html>
