@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본속성 : html</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <!-- heading/웹페이지에 표시할 제목 또는 부제목 -->
+    <h1>네이버</h1>
+    <h2>뉴스 스탠다드</h2>
+    <h3>경제</h3>
+
+    <hr />
+
+    <p>문단의 단락을 <br />의미합니다.</p>
+
+    <!-- 글씨가 많을 때 사용 -->
+    <pre>
+      문단의 단락을 
+      의미합니다
+    </pre>
+
+    <hr />
+
+    <strong>중요한 텍스트</strong>
+    <!-- 리스트의 제목 -->
+
+    <b>굵은 텍스트</b>
+    <!-- 중요하진 않지만 볼드체 사용하고 싶을 때 -->
+
+    <em>그냥저냥 텍스트</em>
+    <address>주소 서울시 서초구</address>
+
+    <hr />
+
+    <!-- 절대경로 -->
+    <!-- title 속성 : 새창열림 -->
+
+    <a href="https://www.naver.com/" target="_blank" title="새창열림">네이버</a>
+
+    <!-- 상대경로 -->
+    <!-- 나를 기준으로 상대의 경로를 찾음 -->
+    <a href="./01-기본설정.html">01-기본설정</a>
+
+    <!-- 메일 연결 -->
+    <a href="mailto:mail@mail.com">mail@mail.com</a>
+    <!-- 전화연결 -->
+    <a href="tel:010-1234-5678">010-1234-5678</a>
+
+    <!-- button : js 처리할 경우 -->
+    <button onclick="document.location='default.asp'">버튼</button>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js"></script>
+
+    <!-- img : image tag -->
+    <!-- 운영성 이미지만 html/나머지 이미지는 css -->
+    <!-- 절대경로 -->
+    <a href="">
+      <img
+        src="https://ssl.pstatic.net/melona/libs/1378/1378592/713f2f689e6e25da5502_20240926151018855.jpg"
+        alt="10월 4일 세계 동물의 날 네이버펫이 쏜다. 10월 1부터 ~ 10월 7부터 역대급 혜택이 와르르!"
+      />
+    </a>
+    <!-- 상대경로 -->
+    <!-- github 먼저 올릴 경우 이 방식 사용 -->
+    <img src="./images/5914c0d70d7287d8239a_20240827112343937.png" alt="아이디를 몰라도 전화번호로 로그인" />
+    <!-- 서버경로 -->
+    <!-- https://www.naver.com 도메인 경로 생략 -->
+    <img src="/images/5914c0d70d7287d8239a_20240827112343937.png" alt="아이디를 몰라도 전화번호로 로그인" />
+  </body>
+</html>

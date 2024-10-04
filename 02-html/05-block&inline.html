@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>block & inline | html</title>
+    <style>
+      #turquoise {
+        background-color: blueviolet;
+      }
+      .turquoise {
+        background-color: turquoise;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .bisque {
+        background-color: bisque;
+      }
+      .yellow {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>html</h1>
+    <h2>block &#38; inline</h2>
+
+    <!-- block : 밑으로 배치됨-->
+    <!-- id가 class 보다 더 높음 -->
+    <!-- id 값은 중복 안됨 / 클래스는 중복 됨 -->
+    <div id="turquoise" class="turquoise">block</div>
+    <div class="blue">block</div>
+
+    <!-- inline : 옆으로 배치됨 -->
+    <span class="bisque">가</span>
+    <span class="yellow">나</span>
+  </body>
+</html>

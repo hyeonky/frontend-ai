@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table : html</title>
+  </head>
+  <body>
+    <h1>table</h1>
+    <h2>table</h2>
+
+    <table border="1" style="width: 90%">
+      <!-- 표의 제목/설명 -->
+      <caption>
+        table title
+      </caption>
+      <!-- 표 스타일 -->
+      <colgroup>
+        <col />
+        <col span="3" width="20%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <!-- scope_col 열 방향으로 읽어줌/웹 접근성 중요!! -->
+          <th scope="col">이름</th>
+          <th>국어</th>
+          <th>영어</th>
+          <th>수학</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 행 -->
+        <tr>
+          <!-- 열 -->
+          <!-- scope_row 행 방향으로 읽어줌/웹 접근성 중요!! -->
+          <th scope="row">영희</th>
+          <td>90</td>
+          <td>80</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <!-- 열 -->
+          <th scope="row">철수</th>
+          <td scope="row">90</td>
+          <td scope="row">80</td>
+          <td scope="row">70</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th scope="row">평균</th>
+        <td scope="row">90</td>
+        <td scope="row">80</td>
+        <td scope="row">70</td>
+      </tfoot>
+    </table>
+  </body>
+</html>
