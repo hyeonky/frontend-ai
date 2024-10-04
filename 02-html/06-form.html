@@ -13,24 +13,24 @@
     <fieldset>
       <legend>회원가입</legend>
       <label for="name">이름</label>
-      <input type="text" name="name" id="name" value="홍길동" readonly />
+      <input type="text" name="name" id="name" value="홍길동" disabled />
       <hr />
 
       <!-- <label for="id">아이디</label> -->
       <label for="id">아이디</label>
-      <input type="text" id="id" name="id" placeholder="8자리 이상 특수문자 포함" />
+      <input type="text" id="id" name="id" placeholder="8자리 이상 특수문자 포함" maxlength="16" required />
       <hr />
 
       <label for="password">비밀번호</label>
-      <input type="password" id="pw" name="pw" />
+      <input type="password" id="pw" name="pw" required />
       <hr />
 
       <label for="email">이메일</label>
-      <input type="email" name="email" id="email" />
+      <input type="email" name="email" id="email" required autofocus />
       <hr />
 
       <label for="tel">전화번호</label>
-      <input type="tel" name="tel" id="tel" value="010.1234.5678" readonly />
+      <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" />
       <hr />
 
       <label for="file">첨부파일</label>
