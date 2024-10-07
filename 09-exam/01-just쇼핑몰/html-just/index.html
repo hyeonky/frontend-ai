@@ -8,19 +8,74 @@
   <script src="./js/script.js"></script>
 </head>
 <body>
+  <div id="u_skip">
+    <!-- enter > 메뉴 or 본문으로 바로가기 -->
+    <a href="#gnb">주메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+  </div>
   <div id="wrap">
     <header id="header">
-      <h1>
+      <h1 id="logo" class="logo">
         <a href="/">just쇼핑몰</a>
       </h1>
-      <nav>
+      <nav id="gnb">
         <dl>
-          <dt></dt>
+          <!-- depth1 -->
+          <dt><a href="#">탑</a></dt>
+          <!-- depth2 -->
+          <dd><a href="#">블라우스</a></dd>
+          <dd><a href="#">티</a></dd>
+          <dd><a href="#">셔츠</a></dd>
+          <dd><a href="#">니트</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="#">아우터</a></dt>
+          <dd><a href="#">자켓</a></dd>
+          <dd><a href="#">코트</a></dd>
+          <dd><a href="#">가디건</a></dd>
+          <dd><a href="#">머플러</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="#">팬츠</a></dt>
+          <dd><a href="#">청바지</a></dd>
+          <dd><a href="#">짧은바지</a></dd>
+          <dd><a href="#">긴바지</a></dd>
+          <dd><a href="#">레깅스</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="#">악세서리</a></dt>
+          <dd><a href="#">귀고리</a></dd>
+          <dd><a href="#">목걸이</a></dd>
+          <dd><a href="#">반지</a></dd>
+          <dd><a href="#">팔찌</a></dd>
         </dl>
       </nav>
     </header>
-    <div class="silde"></div>
-    <main id="container"></main>
+    <div class="silde">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./images/slide1.png" alt="핏을 잡아주는 stretch 계절마다 함께 하기 좋은 붓컷데님">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/slide2.png" alt="fashion week buy 3 get 15% off 2013년 06월 18일 오후 7시 일요일">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/slide3.jpg" alt="더할수록 커지는 made 혜택 1+1 두 장 구매시 15%할인 all-day 차르르-부드러운 모달 티셔츠">
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <main id="container">
+      <section>
+        <h2>공지사항</h2>
+      </section>
+    </main>
     <footer id="footer"></footer>
   </div>
 </body>
