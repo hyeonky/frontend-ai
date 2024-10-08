@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>배경.html</title>
 </head>
-<body>
+<body style="height: 300vh;">
   <h1>html</h1>
   <h2>background</h2>
 
@@ -13,8 +13,30 @@
   <div class="box1">box1</div>
   <style>
     .box1{
+      height: 500px;
       background-color: rgba(255, 0, 0, 0.5);
+      background-image: url("./images/kakao.png");
+      background-repeat: no-repeat;
+      background-position: 100% 0%;
+
+      background: rgba(255, 0, 0, 0.5) url("./images/kakao.png") no-repeat 50% 50% / contain;
+      /* 색상 이미지 반복 포지션 순서대로 정리해야함 */
     }
   </style>
+  <div class="box2">box2</div>
+  <style>
+    .box2{
+      height: 500px;
+      background-color: rgb(95, 158, 160, 0.25);
+      background-image: url("./images/bg-a.jpg");
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      background-attachment: fixed;
+      background: rgb(95, 158, 160, 0.25) url("./images/bg-a.jpg") 
+      no-repeat 100% 0 fixed;
+      background-size: cover;
+    }
+  </style>
+  
 </body>
 </html>
