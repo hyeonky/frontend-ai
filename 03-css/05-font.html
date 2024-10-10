@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font | css</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0&icon_names=cancel" />
+    <style>
+      /* reset */
+      html,
+      body {
+        /* rem font size 기준 */
+        font-size: 16px;
+        /* 크롬브라우저가 사용하는 기본값 : 16px */
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css</h1>
+    <h2>font</h2>
+
+    <!-- font-family : 글꼴 -->
+    <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse veniam provident neque repudiandae alias deleniti nemo necessitatibus aut nam ad molestiae sit voluptatem, placeat nihil repellendus cumque nulla saepe.</p>
+    <style>
+      .txt1 {
+        /* 기본 텍스트와, 보조 텍스트도 같이 입력 */
+        font-family: "Sixtyfour Convergence", sans-serif;
+        color: red;
+      }
+    </style>
+    <hr />
+    <!-- 폰트 사이즈 -->
+    <!-- 절대 사이즈 : px -->
+    <p class="txt2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, vitae?</p>
+    <style>
+      .txt2 {
+        font-size: 1.375rem;
+      }
+    </style>
+    <!-- 상대 사이즈 : rem, em -->
+    <!-- 변경 용이 -->
+    <!-- rem 기준- html body에서 기준한 font size-->
+    <p class="txt3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, rerum.</p>
+    <style>
+      .txt3 {
+        font-size: 1.25em;
+        color: blueviolet;
+      }
+    </style>
+
+    <ul class="list1">
+      <li>안녕하세요. 오다다 입니다.</li>
+      <li><b>프론트엔드</b> 공부하고 있어요.</li>
+      <li>난 고양이를 좋아해요.</li>
+      <li><b>쓸말이</b> 없어요.</li>
+    </ul>
+    <style>
+      .list1 li:first-child {
+        font-size: 1rem;
+      }
+      .list1 li:nth-child(2) {
+        /* 16px */
+        font-size: 0.875em;
+      }
+      .list1 li:nth-child(2) b {
+        /* 18px * 2 = 32px */
+        font-size: 2em;
+      }
+
+      /* 3번째 : 28px */
+      .list1 li:nth-child(3) {
+        font-size: 1.75em;
+      }
+      /* 4번째 : 기준 폰트 2배 사이즈 */
+      .list1 li:nth-child(4) {
+        /* 40px */
+        font-size: 2em;
+      }
+      .list1 li:nth-child(4) b {
+        /* 20 * 2 = 40 */
+        font-size: 2rem;
+      }
+    </style>
+
+    <!-- em : 부모를 기준으로 배수를 계산
+      ex) 부모 폰트 사이즈가 20px일 때, 1em = 20px
+        부모 폰트 사이즈가 20px일 때, 2em = 40px 
+    -->
+    <!-- rem : html, body 를 기준으로 배수를 계산
+    기준이 변경되지 않는다. -->
+
+    <!-- vw : viewport 기준 -->
+    <!-- viewport - 화면 사이즈 1920px-->
+    <!-- 콘텐츠 크기 1280px, 1440px -->
+    <p class="txt3">안녕하세요.</p>
+    <style>
+      .txt3 {
+        font-size: 10vw;
+      }
+    </style>
+
+    <!-- fontawesome -->
+    <i class="fa-solid fa-image"></i>
+    <i class="fa-regular fa-snowflake"></i>
+
+    <style>
+      .fa-image{
+        color: red;
+        font-size: 5rem;
+      }
+      .svg-image{
+        transform: scale(3, 3);
+      }
+    </style>
+    <span class="material-symbols-outlined" ico-cancel>
+      cancel
+      </span>
+    <span class="material-icons-outlined">
+      fingerprint
+      </span>
+  </body>
+</html>
