@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float | css</title>
+</head>
+<body>
+  <h1>css</h1>
+  <h2>float</h2>
+
+  <div id="wrap">
+    <header class="clearfix">
+      <h1>logo</h1>
+      <nav>nav</nav>
+    </header>
+    <main>
+      <ul class="clearfix">
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+      </ul>
+    </main>
+    <footer>footer</footer>
+  </div>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul{
+      list-style: none;
+      /* overflow: auto; */
+      /* 1) 높이값-이건 화면을 줄이면 높이값이 달라질 수 있어서 잘 사용안함*/
+      /* overflow:auto */
+      /* clearfix::after */
+
+    }
+
+    ul li{
+      margin-right: 25px;
+      border: 1px solid #000;
+      float: left;
+      width: calc(20% - 20px);
+      height: 200px;
+      background-color: skyblue;
+      box-sizing: border-box;
+    }
+    ul li:last-child{
+      margin-right: 0;
+    }
+    header{
+      background-color: red;
+      /* overflow: auto; */
+      /* height: 100px; */
+    }
+    .clearfix::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    h1{
+      float: left;
+    }
+    nav{
+      float: right;
+    }
+    main{
+      background-color: rgb(255, 231, 235);
+    }
+    footer{
+      background-color: green;
+    }
+  </style>
+</body>
+</html>
