@@ -68,17 +68,121 @@
     }
   </style>
 
-  <div class="flex-container">
+  <div class="flex-container justify">
     <div>1</div>
     <div>2</div>
     <div>3</div>  
+    <div>4</div>  
+    <div>5  </div>  
   </div>
+  <style>
+    .justify{
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
 
-  <div class="flex-container">
+  <div class="flex-container content">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
     <div>1</div>
     <div>2</div>
     <div>3</div>  
   </div>
+  <style>
+    .content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: stretch;
+      height: 500px;
+  }
+    .content div{
+      width: 30%;
+    }
+  </style>
+
+  <div class="flex-container centering">
+    <div>1</div> 
+  </div>
+  <style>
+    .centering{
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <div class="flex-container order">
+    <div style="order:2">1</div>
+    <div style="order:1">2</div>
+    <div style="order:3">3</div>  
+  </div>
+  <style>
+    .order{
+      display: flex;
+    }
+  </style>
+
+  <div class="flex-container grow">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  <style>
+    .grow{
+      display: flex;
+    }
+    .grow div{
+      flex-grow: 1;
+    }
+  </style>
+
+  <div class="flex-container grow2">
+    <div>header</div>
+    <div id="container">main</div>
+    <div>footer</div>  
+  </div>
+  <style>
+    .grow2{
+      display: flex;
+      flex-direction: column;
+      /* 세로정렬 */
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    #container{
+      flex-grow: 1;
+    }
+  </style>
+
+  <div class="flex-container shrink">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>3</div>  
+  </div>
+  <style>
+    .shrink{
+      display: flex;
+      overflow-x: scroll;
+    }
+    .shrink div{
+      width: 25%;
+      flex-shrink: 0;
+    }
+  </style>
 
   <div class="flex-container">
     <div>1</div>

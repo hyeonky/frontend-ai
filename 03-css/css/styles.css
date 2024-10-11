@@ -1,0 +1,10 @@
+.btn-primary{
+  background-color: pink;
+  border: 1px solid pink;
+}
+.modal-title{
+  font-size: 3rem;
+}
+.modal-dialog{
+  margin-top: 350px;
+}
