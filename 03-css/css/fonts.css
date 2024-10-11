@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "baloo2-semibold";
+  src: url(../fonts/Baloo2-SemiBold.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "baloo2-regular";
+  src: url(../fonts/Baloo2-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
