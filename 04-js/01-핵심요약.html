@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>핵심요약 | js</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
+  <script defer src="./js/jquery.js"></script>
+  <script>
+    // #wrap 쓰면 안 읽힘. 
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <button class="btn1">버튼1</button>
+    <div class="box">box</div>
+    <hr>
+    <button class="btn2">버튼2</button>
+    <div class="box2">box</div>
+    <hr>
+    <div class="btn-contain">
+    <button class="btn3">버튼3</button>
+    <div class="box3">box</div>
+    </div>
+  </div>
+
+  <style>
+    .box{
+      display: none;
+      display: flex;  
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      background-color: blue; 
+    }
+    .box2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      background-color: yellowgreen; 
+    }
+    .btn-contain{
+      position: relative;
+    }
+    .box3{
+      position: absolute;
+      top: 35px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      background-color: yellowgreen; 
+    }
+  </style>
+
+  <script>
+    // 표시 속도 향상됨
+  </script>
+</body>
+</html>
