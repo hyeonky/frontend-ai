@@ -94,15 +94,43 @@ header{
   padding: 5px 20px;
 }
 .slide{
+  
+  position: relative;
   overflow: hidden;
   height: 300px;
+  
 }
 .slide ul{
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ani-slide 3s 1s alternate-reverse infinite;
+}
+@keyframes ani-slide {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  35% {
+    left: -100%;
+  }
+  65% {
+    left: -100%;
+  }
+  70% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
 }
 .slide ul img{
   display: block;
 }
+
 main{
   display: flex;
   justify-content: space-between;
