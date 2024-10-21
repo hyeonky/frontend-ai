@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP scrolling | js</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="space">gsap</div>
+  <!-- <div class="box">box</div> -->
+  <section class="section" style="height: 100vh">
+    <div class="box2"></div>
+  </section>
+  <div class="space">gsap</div>
+
+  <script>
+    gsap.to(".box2", {
+      x:400,
+      y:400,
+      backgroundColor: "blue",
+      duration: 2,
+      scrollTrigger: {
+        trigger: ".section", /* 객체 기준 범위 */
+        start: "10% 30%", /* 시작 위치 */
+        end: "80% 60%", /* 끝 위치 */
+        scrub: "true", /* 스크롤 속도에 따라 애니메이션 속도 조절 */
+        markers:"true", /* 개발 가이드 선 */
+      },
+    });
+
+    gsap.registerPlugin(ScrollTrigger)
+    const tl = gsap.timeline();
+
+    // gsap.to(아이템, 액션);
+    tl.to(".box", {
+      x: 200,
+      duration: 2,
+    })
+    .to(".box", {
+      y: 200,
+      duration: 2,
+    })
+    .to(".box", {
+      rotation: 45,
+      scale: 1.5,
+    });
+  </script>
+  <style>
+    .space {
+      height: 100vh;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: lightcoral;
+    }
+    .section {
+      background-color: lightgray;
+    }
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: lightsalmon;
+      border-radius: 50%;
+    }
+  </style>
+</body>
+</html>
+<!-- 객체 기준 범위 -->
