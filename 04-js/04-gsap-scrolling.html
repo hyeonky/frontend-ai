@@ -9,7 +9,9 @@
 </head>
 <body>
   <div class="space">gsap</div>
-  <!-- <div class="box">box</div> -->
+  <section class="section2" style="height: 100vh">
+  <div class="box">box</div>
+  </section>
   <section class="section" style="height: 100vh">
     <div class="box2"></div>
   </section>
@@ -31,7 +33,15 @@
     });
 
     gsap.registerPlugin(ScrollTrigger)
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section2", /* 객체 기준 범위 */
+        start: "10% 30%", /* 시작 위치 */
+        end: "80% 60%", /* 끝 위치 */
+        scrub: "true", /* 스크롤 속도에 따라 애니메이션 속도 조절 */
+        markers:"true", /* 개발 가이드 선 */
+      },
+    });
 
     // gsap.to(아이템, 액션);
     tl.to(".box", {
