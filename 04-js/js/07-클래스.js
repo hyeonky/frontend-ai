@@ -107,3 +107,69 @@ latte3.made();
 // new OrderCoffee('라떼', 4000).printMenu();
 // new OrderCoffee('라떼').making();
 // new OrderCoffee('라떼').made();
+
+// 클래스 함수란?(복습)
+class OrderCoffee2 {
+  // 생성자 함수 (객체를 생성)
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+
+  // 메소드
+  order() {
+    // console.log(`${this.name}은 ${this.price}원 입니다.`);
+  }
+
+  // 메소드2
+  making() {
+    console.log(`${this.name}를 만들고 있습니다`);
+  }
+
+  // 메소드3
+  made() {
+    console.log(`${this.name}가 완성되었습니다.`);
+  }
+}
+
+const ame4 = new OrderCoffee2('아메리카노', 3500);
+
+// new OrderCoffee('아메리카노', 3500).order(); // 아메리카노는 3500원입니다.
+ame4.order();
+// new OrderCoffee('아메리카노').making(); // 아메리카노를 만들고 있습니다.
+ame4.making();
+// new OrderCoffee('아메리카노').made(); // 아메리카가는 완성되었습니다.
+ame4.made();
+
+// 라뗴로..
+const latte4 = new OrderCoffee2('라떼', 4000);
+// new OrderCoffee('라떼', 3500).order(); // 라떼 3500원입니다.
+latte4.order();
+// new OrderCoffee('라떼').making(); // 라떼 만들고 있습니다.
+latte4.making();
+// new OrderCoffee('라떼').made(); // 라떼 완성되었습니다.
+latte4.made();
+
+// 클래스 상속
+class SpecialCoffee extends OrderCoffee2 {
+  // 생성자 함수
+  constructor(name, price, character) {
+    super(name, price);
+    this.character = character;
+  }
+
+  // 메소드
+  order() {
+    console.log(`${this.character}${this.name}는 ${this.price}원입니다.`);
+    // 미니언즈 아메리카노는 5000원입니다.
+  }
+
+  // 메소드2
+  Limited() {
+    console.log(`${this.character}${this.name}는 11월 한정판매합니다.`);
+  }
+}
+
+const ameSpecial = new SpecialCoffee('아메리카노', 5000, '미니언즈');
+ameSpecial.order();
+ameSpecial.Limited();
